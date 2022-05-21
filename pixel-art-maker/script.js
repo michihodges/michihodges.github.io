@@ -19,12 +19,12 @@
         }
 
         canvas.addEventListener('click', respondToTheClick);
+    }
 
-        function respondToTheClick(e) {
-            if (e.target.nodeName === 'TD') {
-                console.log('A td element was clicked.');
-                e.target.style.backgroundColor = color.value;
-            }
+    function respondToTheClick(e) {
+        if (e.target.nodeName === 'TD') {
+            console.log('A td element was clicked.');
+            e.target.style.backgroundColor = color.value;
         }
     }
 
